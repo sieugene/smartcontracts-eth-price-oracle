@@ -16,6 +16,7 @@
     "@openzeppelin/contracts": "^4.1.0",
     "axios": "^0.20.0",
     "bn.js": "^5.2.0",
+    "node-gyp": "^8.1.0",
     "openzeppelin-solidity": "^4.1.0",
     "truffle": "^5.3.10"
   }

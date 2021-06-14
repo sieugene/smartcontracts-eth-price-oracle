@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:oracle": "cd ./oracle && truffle compile",
+    "build:caller": "cd ./caller && truffle compile",
+    "build": "npm run build:oracle && npm run build:caller"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@openzeppelin/contracts": "^4.1.0",
     "axios": "^0.20.0",
     "bn.js": "^5.2.0",
     "openzeppelin-solidity": "^4.1.0",

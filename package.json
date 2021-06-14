@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:oracle": "cd ./oracle && truffle compile",
     "build:caller": "cd ./caller && truffle compile",
-    "build": "npm run build:oracle && npm run build:caller"
+    "build": "npm run build:oracle && npm run build:caller",
+    "loom:install": "curl https://raw.githubusercontent.com/loomnetwork/loom-sdk-documentation/master/scripts/get_loom.sh | bash",
+    "loom:init": "./loom init",
+    "loom:generate": "./loom genkey -a public_key -k private_key"
   },
   "keywords": [],
   "author": "",
